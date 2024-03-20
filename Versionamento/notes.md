@@ -14,7 +14,7 @@
 - O sistema atua em sequências de 64 bits de zeros e uns
 - A Tabela ASCII é usada para trasnformar caractéres em números
 
-### Váriaveis
+## Váriaveis
 
 - Tipos de Váriaveis:
     > - Inteiros -> Repesentam qualquer número (negativo, nulo ou positivo) que pertença ao conjunto dos números inteiros. Ex: 1520, 0, -2, 25
@@ -22,6 +22,13 @@
     > - Caractere -> Representam *apenas* um caractere. Ex: 'a', 't', '#', '8'
     > - String -> Representam qualquer cadeia de caracteres. Ex "olá mundo"  
     > - Lógico -> Assume dois valores: Verdadeiro (true) ou Falso (false), também conhecido como Booleano
+
+## Portugol
+
+- Comandos Portugol:
+    
+    > - escreva ("") -> escreve uma linha na tela
+    > - leia ('variaveis') -> lê do teclado um valor e deposita na variável escolhida 
 
 ### Observações
 
