@@ -22,7 +22,7 @@
     > - Comunicação efetiva: o relacionamento interpessoal envolve a capacidade de ter uma comunicação efetiva para transmitir pensamentos, ideias e sentimentos de forma clara e respeitosa
     > - Empatia e compreensão é essencial, ser capaz de entender e compartilhar os sentimentos e perspectivas dos outros
     > - Respeito e confiança são essencias pra uma relação saúdavel, envolve tratar os outros com dignidade e validar suas opiniões
-    > -  
+    > - Colaboração e Trabalho em equipe 
 
 ## Atividade
 
