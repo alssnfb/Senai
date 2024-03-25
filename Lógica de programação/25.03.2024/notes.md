@@ -21,7 +21,7 @@
         >- (são três formas de escrever a mesma coisa de forma diferente)
 
 ````
-## Operadores JavaScript
+### Operadores JavaScript
 
 - Para somar no JavaScript, basta usar o operador de soma '+', pode ser entre números inteiros ou reais, mas lembre-se, caso tente somar um número com uma string (cadeia de caractéres) ele vai concatenar,
 
