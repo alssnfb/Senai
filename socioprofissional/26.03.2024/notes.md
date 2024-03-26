@@ -42,6 +42,9 @@
     > - Licenciamento de Propriedade Intelectual -> Empreendedores que possuem P.I como patentes, marcas registradas ou direitos autorais, podem licenciar esses ativos em troca de royalties ou taxas de licenciamenteo
     > - Agricultura e Agronegócio -> Na agriculura e agronegócios, pode-se empreender na área de cultivo de alimentos, produção de gado, agricultura orgânica e até tecnologias agrícolas inovadoras
     > - Empreendedorismo Online -> Envolve a criação de negócios exclusivamente online, como blogs, YouTube, lojas virtuais e afliações de marketing entre outros
+    > - Microempreendedorismo -> Negócios em menor escala, como pequenos comércios locais, serviços de artesanato ou operações de venda direta, como revenda de produtos
+    > - Inovação Corporativa -> Inovar no mercado corporativo, com casos de sucesso como Bill Gates e Steve Jobs
+
 
 
 
