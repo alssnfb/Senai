@@ -35,3 +35,4 @@
 
 - Sinal "!=" é sinal de diferente "≠"
 - Sinal "&&" é basicamente um "and"
+- Sinal "||" significa "or" 
