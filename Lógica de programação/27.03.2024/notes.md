@@ -36,3 +36,4 @@
 - Sinal "!=" é sinal de diferente "≠"
 - Sinal "&&" é basicamente um "and"
 - Sinal "||" significa "or" 
+- Outra forma de concatenar, ao invés de usar o "+" é usando `` e colocar a váriavel dentro de `${}`
