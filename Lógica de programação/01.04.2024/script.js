@@ -4,6 +4,7 @@
 
 let loginUsuario = document.getElementById("inpUsuario")
 let senhaUsuario = document.getElementById("inpSenha")
+loginUsuario.focus()
 
 function efetuarLogin(){
     console.log (loginUsuario.value);

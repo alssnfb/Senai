@@ -13,8 +13,9 @@
 ### javaScript
 
 ```
-    let loginUsuario = document.getElementById("inpUsuario")
+let loginUsuario = document.getElementById("inpUsuario")
 let senhaUsuario = document.getElementById("inpSenha")
+loginUsuario.focus()
 
 function efetuarLogin(){
     console.log (loginUsuario.value);
@@ -22,8 +23,11 @@ function efetuarLogin(){
     if(loginUsuario.value == "Alisson" && senhaUsuario.value == "12345"){
         alert("Seja Bem-Vindo")
     }else{
-        alert("Acesso Negado")
+        alert("Usuário ou senha incorretos")
     }
+    loginUsuario.value = ''
+    senhaUsuario.value = ''
+    loginUsuario.focus()
 }
 ```
 ### HTML
