@@ -51,3 +51,23 @@ function efetuarLogin(){
 </body>
 </html>
 ```
+### CSS
+
+```
+input{
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 5px;
+}
+body{
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;    
+}
+```
