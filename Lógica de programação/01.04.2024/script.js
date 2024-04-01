@@ -11,6 +11,9 @@ function efetuarLogin(){
     if(loginUsuario.value == "Alisson" && senhaUsuario.value == "12345"){
         alert("Seja Bem-Vindo")
     }else{
-        alert("Acesso Negado")
+        alert("Usuário ou senha incorretos")
     }
+    loginUsuario.value = ''
+    senhaUsuario.value = ''
+    loginUsuario.focus()
 }
