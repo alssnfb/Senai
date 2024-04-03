@@ -17,3 +17,22 @@
     > - Contador ++ -> (Contador = Contador + 1)
     > - Variavel ++ (Incremento) -> + 1
     > - Variavel -- (Decremento) -> - 1
+
+### Exemplo javaScript
+
+```
+    let nome = []
+let pergunta = ""
+while(pergunta != "pare"){
+    pergunta = prompt("digite um nome")
+    if (pergunta != "pare"){
+    nome.push(pergunta)
+    }else{
+        break;
+
+    }
+
+}
+console.log(nome)
+alert(nome)
+```
