@@ -36,3 +36,14 @@ while(pergunta != "pare"){
 console.log(nome)
 alert(nome)
 ```
+### For
+
+```
+    for(let i =0; i < 'condição'; i++){
+
+    }
+
+    let i -> o iterador, no while era o contador, agora no for é o i
+    i < 'condição' -> Segue o mesmo príncipio da condição do while, então ele segue repetindo enquanto a condição dita for verdadeira
+    i++ -> É como se fosse o contador++ do while, onde ele vai incrementando, ou também, pode-se decrementar com i--
+```    
