@@ -6,8 +6,9 @@
 
 let numeroUsuário1 = Number(prompt("Digite um número para operação"))
 let numeroUsuário2 = Number(prompt("Digite um segundo número para operação"))
-
 alert("Escolha uma operação: \n" +"(1) Adição \n" + "(2) Subtração \n" + "(3) Divisão \n" + "(4) Multiplicação" )
+let opcaoUsuario = Number(prompt("Digite qual operação você deseja realizar"))
+
 switch(numeroUsuário1){
 case 1:
     alert(numeroUsuário1 + numeroUsuário2)
