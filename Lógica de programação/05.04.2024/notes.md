@@ -11,3 +11,26 @@
 }
 
 ```
+## Switch / Case (Escolha / Caso)
+
+```
+
+switch(variável)`{
+
+    case"valor":
+        código a ser executado caso "valor1" seja igual ao da variável
+        break
+    case"valor2":
+        código a ser executado caso "valor2" seja igual ao da variável
+        break
+
+
+    default:
+        código a ser executado se nenhum "case" for verdadeiro        
+}
+
+```
+
+### Atividade
+
+- Foram feitas mais atividades sobre o laço de repetição "for"
