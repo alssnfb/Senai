@@ -1,9 +1,9 @@
 let numeroUsuario = 5
 let contador = numeroUsuario - 1
+let conta = numeroUsuario * contador
 
-while(numeroUsuario >0){
-    let conta = numeroUsuario * contador
-    let num = numeroUsuario-- 
-    let fatorial = conta * num
+while(contador > 1){
+    contador--
+    conta = conta * contador
 }
-
+console.log(conta)
