@@ -5,7 +5,7 @@ let opcaousuario;
 while( opcaousuario !=0){
 
     
-alert("========= MENU =========" + "\n" + "1 - Cadastrar Nome"+ "\n" + "2- Excluir um nome" + "\n" + "3 - Editar um nome" + "\n" + "4- Pesquisar se um nome está cadastrado" + "\n" + "5- Listar todos os nomes cadastrados em ordem alfabetica")
+alert("========= MENU =========" + "\n" + "1 - Cadastrar Nome"+ "\n" + "2- Excluir um nome" + "\n" + "3 - Editar um nome" + "\n" + "4- Pesquisar se um nome está cadastrado" + "\n" + "5- Listar todos os nomes cadastrados em ordem alfabetica" + "\n" + "0- Sair")
     opcaousuario = Number(prompt("digite a opção que você deseja utilizar"))
     
 switch(opcaousuario){
@@ -41,6 +41,8 @@ case 4:
 case 5:
     nomes.sort()
         alert(nomes)
-    break                                  
+    break;                                  
+case 0:
+    break;    
     }
 }
