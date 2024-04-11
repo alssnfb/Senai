@@ -28,7 +28,7 @@ case 3:
         alert(sabores)
     break;
 case 4:
-    if(sabores == 0){
+    if(sabores.length == 0){
         alert("Adicione ao menos 1 sabor")
         opcaousuario = 1 
         break;
