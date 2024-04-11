@@ -28,6 +28,11 @@ case 3:
         alert(sabores)
     break;
 case 4:
+    if(sabores == 0){
+        alert("Adicione ao menos 1 sabor")
+        opcaousuario = 1 
+        break;
+    }
     alert(`Pedido realizado!`)
     break;        
 }
