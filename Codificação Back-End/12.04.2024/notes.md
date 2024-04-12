@@ -47,4 +47,9 @@ Software em produção
 
 - eXtreme Programming (XP): Essa metodologia tem como objetivos o TDD e programação em pares.
     > - TTD -> Test Drive Development (desenvolvimento dirigodo a testes) realiza um teste primeiro, depois realiza a construção do sistema. Como assim? vai construir primeiro o teste, dai ele vai falhar. Exemplo: Construindo uma calculadora para somar 1 + 2, mas vai falhar pois n tem código, Aí você cria o código, e então o próximo teste é verificar o resultado, como não tem um código para verificar vai falhar, então você vai e cria a lógica para mostrar
+    > - Valores: comnicação, simplicidade, feedback, coragem e respeito
+    > - Princípios: feedback rápido, presumir simplicidade, abraçar mudanças, trabalho de alta qualidade, pequenos passos, melhoria, diversidade, reflexão.
+    > - Práticas: cliente presentem statnd up meeting, programação em par, testes constantes, refatoração, código coletivo, integração contínua, entre outros
+
+ - Kanban: O kanban o ponto de vista de cada autor pode ser considerado como uma metodologia ou um framework auxiliar no desenvolvimento de sistemas.   
 
