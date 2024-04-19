@@ -40,7 +40,7 @@ Software em produção
 
 ### Metodologias Ágeis
 
-- Scrum: Essa metodologia é a amias difundida e usada para desenvolvimento de software. Essa técnica consiste eme entregas contínuas de duração entre 2-4 semanas.
+- Scrum: Essa metodologia é a mais difundida e usada para desenvolvimento de software. Essa técnica consiste em entregas contínuas de duração entre 2-4 semanas.
     > - Papéis: Possui 3 papéis fundamentais no Scrum, são eles: o Product Owner, Scrum Master e Scrum Team (developers)
     > - Eventos: Sprint (2-4 semanas), Planning, Daily Sprint Review, Sprint Retrospective.
     > - Artefatos: Product Backlog, Sprint Backlog e Procut Increment
