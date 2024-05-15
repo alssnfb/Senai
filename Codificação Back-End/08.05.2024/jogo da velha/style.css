@@ -1,4 +1,23 @@
 button{
     width: 100px;
     height: 100px;
+    line-height: 100px;
+    background-color: white;
+    font-size: 100px;
+    border-left: 0;
+    border-top: 0;
+    vertical-align: top;
+    color: rgb(32, 185, 32);
+    font-family: Times;
+}
+
+#botao02, #botao12, #botao22{
+    border-right: 0;
+}
+#botao20, #botao21, #botao22{
+    border-bottom: 0;
+}
+
+button:disabled{
+    border-color: black;
 }
