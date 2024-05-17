@@ -6,7 +6,7 @@
 
 - Os dados são armazendaos em variáveis e essas variáveis ocupam um espaço físico dentro do computador. As variáveis ficam alojadas na memória RAM.
 
-### Dados python
+### Dados Python
 
 ```
 - str:
@@ -31,3 +31,14 @@
 - Set
     > - Um conjunto é uma coleção não ordenada e mutável de elementos únicos.
 ```                
+
+### Estrutura de Decisão
+
+- As estruturas de decisão executam algum comando dependendo da condição lógica.
+
+- Existem quatro estruturas principais de decisão. São elas: simples, composta, aninhada e encadeada.
+
+### Estruturas de Repetição
+
+- As estruturas de repetição permitem repetir um comando ou um conjunto de instruções, de acordo com uma condição ou um contador.
+
