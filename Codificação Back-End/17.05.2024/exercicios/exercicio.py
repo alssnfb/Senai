@@ -11,9 +11,9 @@ def dividir(numero1, numero2):
     return numero1 / numero2
 
 while True:
-    operacao = input("Digite a operação que você deseja realizar: \n somar \n subtrair \n multiplicar \n dividir \n -->")
-    x = int(input("Digite um número"))
-    y = int(input("Digite um número"))
+    operacao = input("Digite a operação que você deseja realizar: \n somar \n subtrair \n multiplicar \n dividir \n --> ")
+    x = int(input("Digite um número "))
+    y = int(input("Digite um número "))
 
     if operacao == "somar":
         resultado = somar(x,y)

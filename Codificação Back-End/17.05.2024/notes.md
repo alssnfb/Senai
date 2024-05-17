@@ -36,9 +36,72 @@
 
 - As estruturas de decisão executam algum comando dependendo da condição lógica.
 
+```
+    # Definindo a variável
+    idade = 18
+
+    # Verificando a condição usando a instrução if
+    if idade >= 18:
+        print("Você é maior de idade.")  
+```
+
 - Existem quatro estruturas principais de decisão. São elas: simples, composta, aninhada e encadeada.
+
+- Condição Simples
+
+```
+    # Condicionais simples
+    if idade >= 0:
+        print("Idade inválida.")
+```
+
+- Condição Composta
+
+```
+    # Condicionais compostas
+    if idade >= 18:
+        print("Maior de idade.")
+    else:
+        print("Menor de idade.")
+```
+- Condição Aninhada
+
+```
+    # Condicionais aninhadas
+    if idade >= 0:
+        if peso >= 18:
+            print("Maior de idade")
+        else:
+            print("Menor de idade")
+    else:
+        print("Idade inválida")
+```
+
+- Condição Encadeada
+
+```
+    # Condicionais encadeadas
+    if idade >= 18:
+        print("Maior de idade")
+    elif idade >= 12:
+        print("Você é adolescente") 
+    else:
+        print("Você é criança")
+```               
 
 ### Estruturas de Repetição
 
 - As estruturas de repetição permitem repetir um comando ou um conjunto de instruções, de acordo com uma condição ou um contador.
+
+```
+    for i in range(5):
+        print(i)
+
+```
+```
+    contador = 0
+    while contador < 5:
+        print(contador)
+        contadr += 1
+```                
 
