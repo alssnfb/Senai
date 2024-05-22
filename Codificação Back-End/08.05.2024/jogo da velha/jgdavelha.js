@@ -35,4 +35,58 @@ function marcarCasa(nomeBotao){
     document.getElementById(nomeBotao).disabled = true
 
     jogada++
+    if(jogada >= 5){
+        encerraJogo()
+    }
+}
+
+function encerraJogo(){
+    if(document.getElementById("botao00").innerText == document.getElementById("botao01").innerText && document.getElementById("botao01").innerText == document.getElementById("botao02").innerText && document.getElementById("botao00").innerText != ""){
+        alert("Jogo finalizado\nVencedor: " + document.getElementById("botao00").innerText)
+        for(cont in tabuleiro){
+            document.getElementById("botao + cont").style.color = "red"
+        }
+    }
+    if(document.getElementById("botao10").innerText == document.getElementById("botao11").innerText && document.getElementById("botao11").innerText == document.getElementById("botao12").innerText && document.getElementById("botao10").innerText != ""){
+        alert("Jogo finalizado\nVencedor: " + document.getElementById("botao10").innerText)
+        for(cont in tabuleiro){
+            document.getElementById("botao + cont").style.color = "red"
+        }
+    }
+    if(document.getElementById("botao20").innerText == document.getElementById("botao21").innerText && document.getElementById("botao21").innerText == document.getElementById("botao22").innerText && document.getElementById("botao20").innerText != ""){
+        alert("Jogo finalizado\nVencedor: " + document.getElementById("botao20").innerText)
+        for(cont in tabuleiro){
+            document.getElementById("botao + cont").style.color = "red"
+        }
+    }
+    if(document.getElementById("botao00").innerText == document.getElementById("botao10").innerText && document.getElementById("botao10").innerText == document.getElementById("botao20").innerText && document.getElementById("botao00").innerText != ""){
+        alert("Jogo finalizado\nVencedor: " + document.getElementById("botao00").innerText)
+        for(cont in tabuleiro){
+            document.getElementById("botao + cont").style.color = "red"
+        }
+    }
+    if(document.getElementById("botao01").innerText == document.getElementById("botao11").innerText && document.getElementById("botao11").innerText == document.getElementById("botao21").innerText && document.getElementById("botao01").innerText != ""){
+        alert("Jogo finalizado\nVencedor: " + document.getElementById("botao01").innerText)
+        for(cont in tabuleiro){
+            document.getElementById("botao + cont").style.color = "red"
+        }
+    }
+    if(document.getElementById("botao02").innerText == document.getElementById("botao12").innerText && document.getElementById("botao12").innerText == document.getElementById("botao22").innerText && document.getElementById("botao02").innerText != ""){
+        alert("Jogo finalizado\nVencedor: " + document.getElementById("botao02").innerText)
+        for(cont in tabuleiro){
+            document.getElementById("botao + cont").style.color = "red"
+        }
+    }
+    if(document.getElementById("botao00").innerText == document.getElementById("botao11").innerText && document.getElementById("botao11").innerText == document.getElementById("botao22").innerText && document.getElementById("botao00").innerText != ""){
+        alert("Jogo finalizado\nVencedor: " + document.getElementById("botao00").innerText) 
+        for(cont in tabuleiro){
+            document.getElementById("botao + cont").style.color = "red"
+        }
+    }
+    if(document.getElementById("botao02").innerText == document.getElementById("botao11").innerText && document.getElementById("botao11").innerText == document.getElementById("botao20").innerText && document.getElementById("botao02").innerText != ""){
+        alert("Jogo finalizado\nVencedor: " + document.getElementById("botao02").innerText)
+        for(cont in tabuleiro){
+            document.getElementById("botao + cont").style.color = "red"
+        }
+    }
 }
