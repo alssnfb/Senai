@@ -12,19 +12,21 @@
 
 header{
     color: white;
-    background-color: #070347;
+    background-color: #3d52a0;
     padding: 5px;
     text-align: center;
-    border-bottom: 3px solid rgb(21, 255, 0);
+    border-bottom: 3px solid #7091e6;
 }
 
 h1{
+    text-align: center;
     color: rgb(230, 218, 218);
     text-shadow: 1px 1px #eee;
     padding-top: 15px;
     padding-left: 130px;
     font-size: 40px;
 }
+
 
 .car{
     display: block;
@@ -44,38 +46,27 @@ h1{
     padding: 0px;
     border: nome;
     font-size: 20px;
-    text-decoration: underline;
-    background-color: transparent;
+    background-color: #070347;
     margin-left: 0%;
     margin-top: 40px;
 }
 
 #clog{
     display: block;
-    width: 5%;
+    width: 15%;
     color: #fff;
     padding: 0px;
     border: nome;
-    font-size: 10px;
-    text-decoration: underline;
+    font-size: 20px;
     background-color: #070347;
     margin-left: 0%;
-    margin-top: 0px;
+    margin-top: 40px;
 }
 .products-container{
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.products-image{
-    height: 300px;
-    width: 100%;
-    margin-bottom: 10px;
-    background-position: center;
-    background-size: cover;
-    border: 5px solid #070347;
-    border-radius: 20px;
-}
 
 .card{
     width: 31%;
@@ -85,26 +76,12 @@ h1{
 }
 
 .container{
-    background-color: rgb(255, 255, 255);
+    background-color: #adbbda;
     min-height: 60vh;
     padding: 60px;
 }
 
-#img-1{
-    background-image: url('/imagens/img1.jpg');
-}
-#img-2{
-    background-image: url('/imagens/img2.jpg');
-}
-#img-3{
-    background-image: url('/imagens/img3.jpg');
-}
-#img-4{
-    background-image: url('/imagens/img4.jpg');
-}
-#img-5{
-    background-image: url('/imagens/img5.jpg');
-}
-#img-6{
-    background-image: url('/imagens/OIP.jpg');
+footer{
+    text-align: center;
+
 }
