@@ -5,12 +5,16 @@ const isPalindrome = require('./functions')
 
 app.use(bodyParser.json())
 
-app.post('/ePalindromo', (req, res) => {
-    const resposta = isPalindrome(req.body.palavra)
-    if (resposta === true){
-        res.send("é palindromo")
-    }
-    res.send('não é palindromo')
+const db = require('./db.json')
+app.get('/produtos', (req,res) =>{
+    produtos = db.produtos
+    res.json(produtos)
+})
+
+app.get('/produtos/:id', (req,res) => {
+    const id = req.params.id
+    const produto = db.produtos.find(produto => produto.id == 2)
+    res.send(produto)
 })
 
 app.listen(8000)
