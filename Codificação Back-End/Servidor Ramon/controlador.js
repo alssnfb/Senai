@@ -41,6 +41,15 @@ const updateProduto = async (req,res) => {
         res.status(404).send({error:'not found'})
     }
     
+    for (const dado in dados){
+        if(!(dado in produto)){
+            console.log('erro: este dado não existe');
+            continue
+        }
+        produto[dado] = dados[dados]
+
+    }
+
 }
 const deleteProduto = async (req,res) => {
     const _id = req.params.id
