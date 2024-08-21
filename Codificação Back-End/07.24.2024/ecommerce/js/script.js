@@ -1,4 +1,4 @@
-let login = '', senha = '', article, div, h3, p1, input, p2, span, aLink, main, section, footer, h2, p3, span2;
+let login = '', senha = '', article, div, h3, p1, input, p2, span, aLink, main, section, footer, h2, p3, span2, loginAut, totalGeral, textoCarrinho, div2;
 let usr = [];
 let snh = [];
 let produto = [];
@@ -42,7 +42,7 @@ section.setAttribute('class', 'products-container');
 main.append(section);
 
 // Criar elementos para cada produto
-for(let i = 0; i < produto.length; i++){ 
+for(let i = 0; i < produto.length; i++){
     article = document.createElement('article');
     article.setAttribute('class', 'card');
     section.append(article);
@@ -86,7 +86,7 @@ for(let i = 0; i < produto.length; i++){
 
     aLink = document.createElement('a');
     aLink.setAttribute('class', 'btn');
-    aLink.setAttribute('onclick', "compra("+"'"+'qtd-'+ i + "'"+ ',' + "'" + cod[i] + "'" + ',' + i + ")")
+    aLink.setAttribute('onclick', "compra(" + "'" + 'qtd-' + i + "'" + ',' + "'" + cod[i] + "'" + ',' + i + ")")
     aLink.setAttribute('href', 'http://www.amazon.com.br/' + link[i]);
     aLink.setAttribute('target', '_blank');
     aLink.innerHTML = 'Comprar';
@@ -220,21 +220,94 @@ function abreTelaLogin(){
 
 function compra(qtdID, produt, posArr){
     if(localStorage.posArr){
-        qtd[posArr] = pareseInt(document.getElementById(qtdID).value)
-        alert(qtd[posArr])
+        qtd[posArr] = parseInt(document.getElementById(qtdID).value)
     }else{
         localStorage.posArr = JSON.stringify(qtd)
     }
-    totalCompra[posArr] = qtd[posArr] * parseFloat(document.getElementById(produt).innerText.replace(",","."))
+    totalCompra[posArr] = qtd[posArr] * parseFloat(document.getElementById(produt).innerText.replace(",", "."))
     localStorage.qtdArr = JSON.stringify(qtd)
     localStorage.totCompArr = JSON.stringify(totalCompra)
 }
 
 function calculaCesta(){
     usr = JSON.parse(localStorage.getItem('usrArr'))
-    if(usr.includes(login)){
-        alert("Logado")
+    loginAut = localStorage.getItem('loginAutenticado')
+    if(usr.includes(loginAut)){
+        let textoCarrinho = ''
+        for(i in qtd){
+            if(qtd[i] > 0){
+                totalGeral += totalCompra[i]
+                textoCarrinho += qtd[i] + ' x ' + preco[i].toFixed(2).replace('.',',') + " - Boneco" + produto[i] + " R$ " + totalCompra[i].toFixed(2).replace('.',',') + "\n"
+            }
+        }
+        if(totalGeral > 0){
+            alert(`${textoCarrinho}
+           
+            _______________________________________________________
+            Total da compra                               R$ ${totalGeral.toFixed(2).replace('.',',')}          
+            `)
+            let text = "confirme ou cancele sua compra!\nPressione OK para comprar ou cancelar para desistir a compra."
+            if(confirm(text)){
+                alert('Compra efetuada com sucesso!');
+                for(i in qtd){
+                    qtd[i] = 0
+                }
+                localStorage.qtdArr = JSON.stringify(qtd)
+                window.location.reload()
+            }else{
+                alert('Sua compra não foi realizada!')
+                totalGeral = 0
+            }            
+        }
     }else{
-        alert("Você não está logado!")
+        alert("Você não está logado")
     }
+}
+
+function calculaCesta(){
+    usr = JSON.parse()
+}
+
+function abraLink(posArr){
+    localStorage.setItem('produtoIndividual', produto[posArr])
+    //setItem - armazena valores no localStorege
+    localStorage.setItem('descricaoIndividual', descricao[posArr])
+    let url_atual = window.location.href
+    if(url_atual != "https://127.0.0.1:5500/produto.html" && url_atual != "https://127.0.0.1:5500/produto.html#" ){
+
+    }
+}
+
+function carregaProduto(){
+    let produtoCompra = localStorage.getItem('produtoIndividual')
+    let desCompra = localStorage.getItem('descricaoIdividual')
+    let pos = produto.indexOf(produtoCompra)
+    document.getElementById("tituloPr;oduto").innerHTML = produtoCompra
+    document.getElementById('imgProd').style.backgroundImage ='url(images/img' + pos + '.jpg)'
+    div2 = document.createElement('div')
+    div2.setAttribute('class', 'card')
+    document.body.append(div2)
+    p1 = document.createAttribute('p')
+    p1.innerHTML = 'Qtd: '
+    div2.append(p1)
+    input = document.createElement('input')
+    input.setAttribute('type ', 'number ')
+    input.setAttribute('value ', ' 1')
+    input.setAttribute('min ', ' 1')
+    input.setAttribute('max', '10 ')
+    input.setAttribute('id', ' qtd-' + pos)
+    p1.append(input)
+    p2 = document.createAttribute('p')
+    p2.innerHTML = 'R$ '
+    span = document.createElement('span')
+    span.setAttribute('id', cod[pos])
+    span.setAttribute('class', 'bold')
+    span.innerHTML = preco[pos].toFixed(2).replace('.', ',')
+    p2.append(span)
+    div2.append(p2)
+    aLink = document.createElement('a')
+    aLink.setAttribute('onclick', 'compra(' + "'" + 'qtd- ' + pos + "'" + ',' + "'" + cod[pos] + "'" + ',' + pos + ')')
+    aLink.setAttribute('', '')
+
+
 }
