@@ -1,11 +1,16 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
-const rotas = require('./rotas/rotas_produtos')
+const rotas_produtos = require('./rotas/rotas_produtos')
+const rotas_clientes = require('./rotas/rotas_clientes')
 
 
 app.use(bodyParser.json())
 
-app.use('/produtos', rotas)
+app.use('/produtos', rotas_produtos)
+
+app.use('/cliente', rotas_clientes)
 
 app.listen(8000)
+
+module.exports = app;

@@ -18,7 +18,7 @@ const getProduto = async (req, res) => {
 const createProduto = async (req,res) => {
     const dados = req.body
     if(!dados.nome || !dados.preco) {
-        res.status(406).send({error:'Nome e preço deve ser informado'})
+       return res.status(406).send({error:'Nome e preço deve ser informado'})
     }
     const _id = uuidv4()
     dados.id = _id
@@ -38,7 +38,7 @@ const updateProduto = async (req,res) => {
         (produto) => produto.id == _id
         )
     if (!produto || !dados) {
-        res.status(404).send({error:'not found'})
+        return res.status(404).send({error:'not found'})
     }
     
     for (const dado in dados){
@@ -57,6 +57,15 @@ const deleteProduto = async (req,res) => {
     const produto = lista_produtos.find(
         (produto) => produto.id == _id
         )
+
+        var idx = lista_produtos.indexOf(produto)
+        lista_produtos.splice(idx, 1)
+    fs.writeFile('./db.json', JSON.stringify(db), (err) => {
+        if (err){
+            res.status(500).send({error:'erro no servidor'})
+        }
+    })
+    res.status(204).send()
  
 }
 
