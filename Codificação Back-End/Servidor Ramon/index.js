@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
-const rotas = require('./rotas')
+const rotas = require('./rotas/rotas_produtos')
 
 
 app.use(bodyParser.json())
