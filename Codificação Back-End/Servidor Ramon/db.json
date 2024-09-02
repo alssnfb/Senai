@@ -1,1 +1,143 @@
-{"produtos":[{"id":1,"nome":"Smartphone","descricao":"Smartphone de última geração","preco":1500,"imagem":"smartphone.jpg"},{"id":2,"nome":"Camiseta","descricao":"Camiseta de algodão","preco":30,"categoria_id":2,"imagem":"camiseta.jpg"},{"id":3,"nome":"Vaso de Flores","descricao":"Vaso de flores decorativo","preco":50,"categoria_id":3,"imagem":"vaso_flores.jpg"},{"nome":"produto teste","descricao":"uma descricao qualquer","preco":600,"imagem":"foto.jpg","id":"e8801215-9b11-4a43-b979-344afccbfcc9"},{"nome":"produto teste2","descricao":"uma descricao qualquer","preco":700,"imagem":"foto.jpg","id":"fde550fa-7f2b-4560-bff7-5011f67b6757"},{"nome":"produto teste2","descricao":"uma descricao qualquer","preco":700,"imagem":"foto.jpg","id":"cd3b9cb7-b563-44c0-93d0-d1fc538a5de6"}],"clientes":[{"id":1,"nome":"João Silva","email":"joao.silva@example.com","senha":"123456","endereco":{"rua":"Rua dos Pinheiros","numero":123,"bairro":"Centro","cidade":"São Paulo","estado":"SP","cep":"01234-567"}},{"id":2,"nome":"Maria Oliveira","email":"maria.oliveira@example.com","senha":"abcdef","endereco":{"rua":"Rua das Flores","numero":456,"bairro":"Jardim","cidade":"Rio de Janeiro","estado":"RJ","cep":"98765-432"}},{"nome":"Alisson Fernandes Bernardo","email":"alisson@gmail.com","senha":"12345","endereco":{"rua":"Rua Osmar Conceição","numero":79,"bairro":"Colônia Santana","cidade":"São José","estado":"SC","cep":"88123-170"},"id":"2c96d7a4-933a-47bf-968f-f62f0457ffa8"}],"pedidos":[{"id":1,"cliente_id":1,"data_pedido":"2022-01-01","status":"pendente","itens":[{"produto_id":1,"quantidade":2,"preco_unitario":1500},{"produto_id":2,"quantidade":1,"preco_unitario":30}]},{"id":2,"cliente_id":2,"data_pedido":"2022-01-15","status":"entregue","itens":[{"produto_id":3,"quantidade":1,"preco_unitario":50}]}]}
+{
+    "produtos": [
+        {
+            "id": 3,
+            "descricao": "Vaso de flores decorativo",
+            "preco": 50,
+            "categoria_id": 3,
+            "imagem": "vaso_flores.jpg"
+        },
+        {
+            "nome": "produto teste",
+            "descricao": "uma descricao qualquer",
+            "preco": 600,
+            "imagem": "foto.jpg",
+            "id": "e8801215-9b11-4a43-b979-344afccbfcc9"
+        }
+    ],
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "João Silva",
+            "email": "joao.silva@example.com",
+            "senha": "123456",
+            "endereco": {
+                "rua": "Rua dos Pinheiros",
+                "numero": 123,
+                "bairro": "Centro",
+                "cidade": "São Paulo",
+                "estado": "SP",
+                "cep": "01234-567"
+            }
+        },
+        {
+            "id": 2,
+            "nome": "Maria Oliveira",
+            "email": "maria.oliveira@example.com",
+            "senha": "abcdef",
+            "endereco": {
+                "rua": "Rua das Flores",
+                "numero": 456,
+                "bairro": "Jardim",
+                "cidade": "Rio de Janeiro",
+                "estado": "RJ",
+                "cep": "98765-432"
+            }
+        },
+        {
+            "nome": "Alisson Fernandes Bernardo",
+            "email": "alisson@gmail.com",
+            "senha": "12345",
+            "endereco": {
+                "rua": "Rua Osmar Conceição",
+                "numero": 79,
+                "bairro": "Colônia Santana",
+                "cidade": "São José",
+                "estado": "SC",
+                "cep": "88123-170"
+            },
+            "id": "2c96d7a4-933a-47bf-968f-f62f0457ffa8"
+        },
+        {
+            "email": "joao@gmail.com",
+            "senha": "$2a$10$VyK6aJ9JfHMpkB.GzIOgQunvcyaFLzO6CJ8QBVeUTTTX2FfD/aqZG",
+            "endereco": {
+                "rua": "Rua Osmar Conceição",
+                "numero": 79,
+                "bairro": "Colônia Santana",
+                "cidade": "São José",
+                "estado": "SC",
+                "cep": "88123-170"
+            },
+            "id": "3f5ac4e5-d750-4bbd-97b9-ca33e90bba26"
+        },
+        {
+            "email": "fulano@gmail.com",
+            "senha": "$2a$10$KN9LcfbufOcqJpfvm86KWOzfkUPK4TaUp7/bh5fF3CEOnuuoBieza",
+            "id": "21c97a81-bed9-4ded-8be7-118510a97e86"
+        },
+        {
+            "nome": "Fulano",
+            "email": "fulano@gmail.com",
+            "senha": "$2a$10$iN6FhWcWnd2jk2RClmRDe.8rhKu0U185pwbKWffIQZAFIAUKOG9K2",
+            "id": "52570f1c-182e-4484-b8b6-1f4a0f8564dc"
+        },
+        {
+            "nome": "Fulano",
+            "email": "fulano@gmail.com",
+            "senha": "$2a$10$lfgGImcdukYVn/oFwzjo1uRABqVMiHCf0BUYz20SIcn/ErQl8Pviq",
+            "id": "02585a3f-3942-4f7d-838a-840bf149bd28"
+        },
+        {
+            "nome": "Fulano",
+            "email": "fulano@gmail.com",
+            "senha": "$2a$10$Y5SiQZvTjw5gkoNFjYDnQ.yFwOsZcHDDIoFvo9BGIOr.cmw/UURSi",
+            "id": "62ab5691-58b2-4dd7-8dcf-e86f31e901cb"
+        },
+        {
+            "nome": "Fulano",
+            "email": "fulano@gmail.com",
+            "senha": "$2a$10$M5SAWnmRdbbr.lpfWcMkL.fqKc67c16jNUGeUCOpb4tYU1.FvkBCS",
+            "id": "a252e5f7-8cb8-4d52-9080-ccc766bd9df8"
+        },
+        {
+            "nome": "Fulano",
+            "email": "fulano@gmail.com",
+            "senha": "$2a$10$O1zjyTB0tkKPtBRu37bOFelosReRrrBiGsbINPnIComo0AqqYyQF6",
+            "id": "7a0bf229-e5d1-4c22-9d7c-54d6f9c4571a"
+        }
+    ],
+    "pedidos": [
+        {
+            "id": 1,
+            "cliente_id": 1,
+            "data_pedido": "2022-01-01",
+            "status": "pendente",
+            "itens": [
+                {
+                    "produto_id": 1,
+                    "quantidade": 2,
+                    "preco_unitario": 1500
+                },
+                {
+                    "produto_id": 2,
+                    "quantidade": 1,
+                    "preco_unitario": 30
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "cliente_id": 2,
+            "data_pedido": "2022-01-15",
+            "status": "entregue",
+            "itens": [
+                {
+                    "produto_id": 3,
+                    "quantidade": 1,
+                    "preco_unitario": 50
+                }
+            ]
+        }
+    ]
+}

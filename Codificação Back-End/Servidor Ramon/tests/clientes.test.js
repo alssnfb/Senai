@@ -12,11 +12,33 @@ describe('GET /cliente', () => {
     })
 })
 
+describe('Criar /cliente', () => {
+    it('criar cliente', async () => {
+        const res = await request(app).post('/cliente').send(
+            {
+                nome: "Fulano",
+                email: "fulano@gmail.com",
+                senha: "12345"
+            }
+        )    
+        expect(res.status).toBe(204)
+    }) 
+})
+
 describe('Atualizar /cliente/:id', () => {
     it('Atualizar nome do cliente com sucesso', async() =>{
-        const res = await request(app).put('/cliente/c2da497b-c598-461a-a26a-d003ff23f392').send({
-            nome: 'ramon update'
-        })
+        const res = await request(app).post('/cliente/21c97a81-bed9-4ded-8be7-118510a97e86').send(
+            {
+            nome: 'alisson update 2'
+            }
+        )
+        expect(res.status).toBe(204)
+    })
+})
+
+describe('Deletar /cliente/:id', () => {
+    it('Deletar cliente efetuado com sucesso', async() => {
+        const res = await request(app).delete('/cliente/12963a68-9ea5-42e3-9d9d-e8fbaf8c9afd')
         expect(res.status).toBe(204)
     })
 })

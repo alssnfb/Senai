@@ -1,6 +1,7 @@
 const db = require('../db.json')
 const { v4: uuidv4 } = require('uuid')
 const fs = require('fs')
+const { log } = require('console')
 
 
 const listProdutos = async (req,res) => {
@@ -18,7 +19,7 @@ const getProduto = async (req, res) => {
 const createProduto = async (req,res) => {
     const dados = req.body
     if(!dados.nome || !dados.preco) {
-       return res.status(406).send({error:'Nome e preço deve ser informado'})
+        return res.status(406).send({error:'Nome e preço deve ser informado'})
     }
     const _id = uuidv4()
     dados.id = _id
@@ -28,7 +29,7 @@ const createProduto = async (req,res) => {
             res.status(500).send({error:'erro no servidor'})
         }
     })
-    res.status(204).send()
+    res.status(204).send("Produto cadastrado com sucesso!")
 }
 const updateProduto = async (req,res) => {
     const _id = req.params.id
@@ -38,18 +39,18 @@ const updateProduto = async (req,res) => {
         (produto) => produto.id == _id
         )
     if (!produto || !dados) {
-        return res.status(404).send({error:'not found'})
+        res.status(404).send({error:'n0ot found'})
     }
-    
-    for (const dado in dados){
+
+
+    for(const dado in dados){
         if(!(dado in produto)){
             console.log('erro: este dado não existe');
             continue
         }
-        produto[dado] = dados[dados]
-
+        produto[dado] = dados[dado]
+        res.status(204).send("Produto alterado com sucesso!")
     }
-
 }
 const deleteProduto = async (req,res) => {
     const _id = req.params.id
@@ -58,7 +59,7 @@ const deleteProduto = async (req,res) => {
         (produto) => produto.id == _id
         )
 
-        var idx = lista_produtos.indexOf(produto)
+    var idx = lista_produtos.indexOf(produto)
         lista_produtos.splice(idx, 1)
     fs.writeFile('./db.json', JSON.stringify(db), (err) => {
         if (err){
@@ -66,7 +67,6 @@ const deleteProduto = async (req,res) => {
         }
     })
     res.status(204).send()
- 
 }
 
 module.exports = {listProdutos, getProduto, createProduto, updateProduto, deleteProduto}

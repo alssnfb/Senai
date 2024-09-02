@@ -11,6 +11,6 @@ app.use('/produtos', rotas_produtos)
 
 app.use('/cliente', rotas_clientes)
 
-app.listen(8000)
+app.listen(7777)
 
 module.exports = app;
