@@ -4,9 +4,9 @@ const controlador = require('../controladores/controlador_produtos')
 
 
 router.get('', controlador.listProdutos)
-router.get('/:id', controlador.getProduto)
-router.post('', controlador.createProduto )
+router.get('produtos/:id', controlador.getProduto)
+router.post('', controlador.createProduto)
 router.post('/:id', controlador.updateProduto)
-router.delete('/:id', controlador.deleteProduto )
+router.delete('/:id', controlador.deleteProduto)
 
 module.exports = router;

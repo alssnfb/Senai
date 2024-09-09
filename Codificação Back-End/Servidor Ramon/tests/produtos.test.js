@@ -18,8 +18,8 @@ describe('Criar /produtos', () => {
         const res = await request(app).post('/produtos').send(
             {
                  "nome": "Celular",
-                  "descricao": "Celular 4K daora",
-                  "preco": 2500,
+                  "descricao": "Celular 4k brabissimo",
+                  "preco": 4500,
                   "imagem": "celular.jpg"
             }
         )
@@ -29,7 +29,7 @@ describe('Criar /produtos', () => {
 
 describe('Atualizar /produtos/:id', () => {
     it('atualizar o nome do produto com sucesso', async () => {
-        const res = await request(app).post('/produtos/3').send(
+        const res = await request(app).post('/produtos/e8801215-9b11-4a43-b979-344afccbfcc9').send(
             {
                 nome:'alisson update',
             }
