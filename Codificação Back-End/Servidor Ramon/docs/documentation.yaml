@@ -1,0 +1,158 @@
+openapi: 3.0.3
+
+info:
+  title: API Senai
+  description: API desenvolvida para testes no senai
+  version: 3.0.0
+
+paths:
+  /cliente:
+
+    get:
+      summary: Busca pela API a lista de clientes completa
+      responses:
+        200:
+          description: ok
+
+    post:
+      summary: Faz a adição do cliente no JSON
+      parameters:
+        - in: path
+          name: Json
+          required: true
+          type: json
+          minimum: 1
+          description: Parametro passado pelo corpo e atualiza
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Ok
+   
+   
+  /cliente{id}:
+    get:
+      summary: Busca o cliente pelo ID passado
+      responses:
+        200:
+          description: ok
+
+    post:
+      summary: Faz a atualização do cliente no JSON
+      parameters:
+        - in: path
+          name: Json
+          required: true
+          type: json
+          minimum: 1
+          description: Parametro passado pelo corpo e atualiza
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Ok
+
+    delete:
+          summary: deleta um cliente com base no ID passado
+          parameters:
+            - in: path
+              name: Json
+              required: true
+              type: json
+              minimum: 1
+              description: Parametro passado pelo corpo e atualiza
+          produces:
+            - application/json
+          responses:
+            200:
+              description: Ok          
+
+  /produto:
+    get:
+      summary: Busca todos os produtos da lista
+      responses:
+        200:
+          description: ok            
+
+    post:
+      summary: Cria um produto no JSON
+      parameters:
+        - in: path
+          name: Json
+          required: true
+          type: json
+          minimum: 1
+          description: Parametro passado pelo corpo e atualiza
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Ok
+  
+  /produto{id}:
+      get:
+        summary: Busca o produto baseado no ID
+        responses:
+          200:
+            description: ok            
+
+      post:
+        summary: Atualiza o produto baseado no ID
+        parameters:
+          - in: path
+            name: Json
+            required: true
+            type: json
+            minimum: 1
+            description: Parametro passado pelo corpo e atualiza
+        produces:
+          - application/json
+        responses:
+          200:
+            description: Ok
+
+      delete:
+            summary: deleta um produto com base no ID passado
+            parameters:
+              - in: path
+                name: Json
+                required: true
+                type: json
+                minimum: 1
+                description: Parametro passado pelo corpo e atualiza
+            produces:
+              - application/json
+            responses:
+              200:
+                description: Ok
+
+  /auth:
+    post:
+        summary: Cria um cadastro para login no banco de dados
+        parameters:
+          - in: path
+            name: Json
+            required: true
+            type: json
+            minimum: 1
+            description: Parametro passado pelo corpo e atualiza
+        produces:
+          - application/json
+        responses:
+          200:
+            description: Ok                                                  
+  /auth{logout}:
+      post:
+          summary: Cria faz o logout do cliente
+          parameters:
+            - in: path
+              name: Json
+              required: true
+              type: json
+              minimum: 1
+              description: Parametro passado pelo corpo e atualiza
+          produces:
+            - application/json
+          responses:
+            200:
+              description: Ok                   
