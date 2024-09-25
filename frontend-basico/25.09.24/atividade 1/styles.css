@@ -1,0 +1,146 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5; 
+    color: #333; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a1a1a; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #555; 
+}
+
+.favoritos {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.favoritos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.favoritos li {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s; 
+}
+
+.favoritos li:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.tabela {
+    margin-top: 20px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #1a1a1a; 
+    color: #fff; 
+}
+
+td {
+    background-color: #f9f9f9; 
+}
+
+.formulario {
+    margin-top: 20px;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px; 
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #1a1a1a; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #333; 
+}
+
+.imagem {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+a {
+    color: #1a1a1a; 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a; 
+    color: #fff; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
