@@ -10,7 +10,7 @@ exports.listarAlunos = async (req, res) => {
   }
 };
 
-// Criar novo aluno
+// Criar n covo aluno
 exports.criarAluno = async (req, res) => {
   try {
     const novoAluno = new Aluno(req.body);
